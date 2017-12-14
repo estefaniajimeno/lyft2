@@ -1,0 +1,46 @@
+.header {
+	background:linear-gradient( #2B1E66,#76278F); 
+	height: 100vh;
+}
+
+#logo2{
+	width: 13em;
+	height: 13em;
+	margin-top: 13em;
+	margin-left: 6em;
+	align-items: center;
+}
+
+
+.section1{
+	background-image: url(../images/fondo.jpg);
+	height:100vh;
+	background-size: cover;
+	width: 100%;
+}
+
+.logo3{
+	width: 5em;
+	height: 5em;
+	margin-left: 9em;
+	margin-top: 1em;
+}
+.logo{
+	width: 15em;
+	height: 18em;
+	margin-top: 4em;
+	margin-left: 3em;
+	margin-bottom: 3em;
+}	
+.btn{
+	color:white;
+	border-color: white;
+}
+#btn-1{
+	margin-left: 2em;
+	margin-right: 7em;
+}
+
+#btn-2{
+	margin-right: 3em;
+}
