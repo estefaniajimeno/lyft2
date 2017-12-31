@@ -6,6 +6,8 @@
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/build/css/intlTelInput.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,18 +15,19 @@
 <body>
   
    		
-         		 <header class="header">
-         			 <div class=" container-fluid ">	
-         		 		<div class="row">
-     						<div  class="col-xs-12" >
-   								<img id="logo2" src="assets/images/logo2.png">
-   							</div>
-   						</div>
-   					</div>
-   				</header>
+      <header class="header">
+        <div class=" container-fluid ">	
+          <div class="row">
+            <div  class="col-xs-12" >
+              <img id="logo2" src="assets/images/logo2.png">
+            </div>
+          </div>
+        </div>
+   		</header>
    		
-   		<div class="container-fluid">
-   				<section class="section1">
+
+   		<section class="start">
+        <div class="container-fluid">
    					<div class="row">
      					<div  class="col-xs-12" >
    							<img class="logo3" src="assets/images/logo3.png">
@@ -37,19 +40,93 @@
                </div>
                <div class="col-xs-6">
                   <button type="button" id="btn-2" class="btn btn-outline-dark">Sign Up</button>
-                </div>
+               </div>
             </div> 
-   						
-   					
-   				</section>
-   		</div>
-	
+          </div>			
+      </section>
+   		
+      <section id="chooseCountry">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+                <button type="button" id="back" >
+                 <a href="#"><span id="arrow" class="fa fa-arrow-left fa-2x" aria-hidden="true"></span></a> 
+                </button>
+                
+                <p class="signUp">Sign Up </p>
+                <p class="join">Join now for free ride credit</p>
+                <hr>
+                <div class="text-center">
+                <input type="tel" id="demo" class="flags" maxlength="10"> 
+                </div>
+                <p class="send"> We'll send a text to verify your phone</p>
+                <button disabled="true" type="button"  class="btn btn-pink" id="next">Next</button> 
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="verify">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <button type="button" id="back2" >
+                 <a href="#"><span id="arrow" class="fa fa-arrow-left fa-2x" aria-hidden="true"></span></a> 
+                </button>
+              <p class="phoneNumber"> Verify phone number </p>
+              <p class="freeCredit">Join now for free ride credit</p>
+              <hr>
+              <span class="lab">Lab.  <input  id="lines" type="text"  placeholder="- - -" maxlength="3"> </span>
+              <p class="sent">Enter the code sent to +56</p>
+              <button type="button" class="btn btn default" id="resend">Resend code </button>
+              <button disabled="true" type="button" class="btn btn-default" id="following">Next</button> 
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="agree">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <button type="button" id="back3" >
+                 <a href="#"><span id="arrow" class="fa fa-arrow-left fa-2x" aria-hidden="true"></span></a> 
+              </button>
+                <div>
+                  <p class="signUp">Sign Up </p>
+                  <p class="join">Join now for free ride credit</p>
+                  <hr>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                <input type="text" class="form-control name" placeholder="First name" aria-describedby="basic-addon1" value="">
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control email" placeholder="Email" aria-describedby="basic-addon1" value="">
+                </div>
+                <div class="input-group">
+                  <input type="checkbox" aria-label="..." class="check" value="">
+                  <p>I agree to Lyft'ss Terms of Service</p>
+                </div>              
+                <button disabled="true" type="button" class="btn btn-default" id="comming">Next</button> 
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="end">
+        <img class="logo" src="assets/images/logo.png">
+        <span><i  id="check" class="fa fa-check-square-o fa-5x" aria-hidden="true"></i></span>
+      </section>
 
 
-
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="assets/build/js/intlTelInput.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
+
 </body>
 </html>
